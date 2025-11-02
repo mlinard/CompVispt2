@@ -58,23 +58,23 @@ Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `s
 gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall
  ```
 
-Como Usar
+## Como Usar
 O programa é executado via linha de comando com três argumentos:
 
 ```bash
 
-processador <arquivo_entrada.bmp> <arquivo_saida.bmp> <filtro>
+processador <Entrada-arquivo.bmp> <saida-arquivo.bmp> <filtro>
 ```
 Filtros Disponíveis:
-median
+* median
 
-mode
+* mode
 
-lowpass
+* lowpass
 
-highpass
+* highpass
 
-Exemplo de Uso:
+### Exemplo de Uso:
 ```bash
 
 processador Exemplo/Entrada-mediana.bmp resultado.bmp median
