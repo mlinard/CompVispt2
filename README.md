@@ -48,7 +48,8 @@ O projeto foi testado em Windows com MinGW-w64 (GCC e Make).
 ### Compilação com `make` (Recomendado)
 No terminal, na raiz do projeto, execute:
 ```bash
-make ```
+make
+ ```
 Isso criará o executável processador.
 
 ### Compilação Manual
