@@ -37,6 +37,19 @@ Substitui cada pixel pelo valor mais frequente (moda) em sua vizinhança 3x3. Is
 | ![Imagem original de um pôr do sol](Exemplo//Entrada-moda.bmp) | ![Imagem após filtro de moda](Exemplo//saida_moda_final.bmp) |
 
 ---
+## Como Compilar
+
+O projeto foi testado em Windows com MinGW-w64 (GCC e Make).
+
+### Requisitos
+* `gcc` (GNU Compiler Collection)
+* `make` (GNU Make)
+
+### Compilação com `make` (Recomendado)
+No terminal, na raiz do projeto, execute:
+```bash
+make
+Isso criará o executável processador.
 
 ### Compilação Manual
 Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `src/`):
