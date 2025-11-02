@@ -6,21 +6,21 @@
 Image* loadImage(char* filename) {
     FILE* file = fopen(filename, "rb");
     if (!file) {
-        fprintf(stderr, "Erro: Não foi possível abrir o arquivo %s\n", filename);
+        fprintf(stderr, "Erro: Nao foi possivel abrir o arquivo %s\n", filename);
         return NULL;
     }
 
     // Ler cabeçalho do arquivo
     BMPFileHeader fileHeader;
     if (fread(&fileHeader, sizeof(BMPFileHeader), 1, file) != 1) {
-        fprintf(stderr, "Erro: Não foi possível ler o cabeçalho do arquivo\n");
+        fprintf(stderr, "Erro: Nao foi possivel ler o cabecalho do arquivo\n");
         fclose(file);
         return NULL;
     }
 
     // Verificar se é um arquivo BMP válido
     if (fileHeader.type != 0x4D42) { // 'BM' em little-endian
-        fprintf(stderr, "Erro: Arquivo não é um BMP válido\n");
+        fprintf(stderr, "Erro: Arquivo nao eh um BMP valido\n");
         fclose(file);
         return NULL;
     }
@@ -28,14 +28,14 @@ Image* loadImage(char* filename) {
     // Ler cabeçalho de informação
     BMPInfoHeader infoHeader;
     if (fread(&infoHeader, sizeof(BMPInfoHeader), 1, file) != 1) {
-        fprintf(stderr, "Erro: Não foi possível ler o cabeçalho de informação\n");
+        fprintf(stderr, "Erro: Nao foi possivel ler o cabecalho de informacao\n");
         fclose(file);
         return NULL;
     }
 
     // Verificar se é 24 bits não comprimido
     if (infoHeader.bits != 24 || infoHeader.compression != 0) {
-        fprintf(stderr, "Erro: Apenas BMP de 24 bits não comprimidos são suportados\n");
+        fprintf(stderr, "Erro: Apenas BMP de 24 bits nao comprimidos sao suportados\n");
         fclose(file);
         return NULL;
     }
@@ -43,7 +43,7 @@ Image* loadImage(char* filename) {
     // Criar estrutura Image
     Image* img = (Image*)malloc(sizeof(Image));
     if (!img) {
-        fprintf(stderr, "Erro: Falha ao alocar memória para a estrutura Image\n");
+        fprintf(stderr, "Erro: Falha ao alocar memoria para a estrutura Image\n");
         fclose(file);
         return NULL;
     }
@@ -58,7 +58,7 @@ Image* loadImage(char* filename) {
     // Alocar memória para os dados da imagem
     img->data = (uint8_t*)malloc(img->width * img->height * 3);
     if (!img->data) {
-        fprintf(stderr, "Erro: Falha ao alocar memória para os dados da imagem\n");
+        fprintf(stderr, "Erro: Falha ao alocar memoria para os dados da imagem\n");
         free(img);
         fclose(file);
         return NULL;
@@ -94,13 +94,13 @@ Image* loadImage(char* filename) {
 
 int saveImage(char* filename, Image* img) {
     if (!img || !img->data) {
-        fprintf(stderr, "Erro: Imagem inválida\n");
+        fprintf(stderr, "Erro: Imagem invalida\n");
         return 0;
     }
 
     FILE* file = fopen(filename, "wb");
     if (!file) {
-        fprintf(stderr, "Erro: Não foi possível criar o arquivo %s\n", filename);
+        fprintf(stderr, "Erro: Nao foi possivel criar o arquivo %s\n", filename);
         return 0;
     }
 
