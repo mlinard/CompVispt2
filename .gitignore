@@ -1,0 +1,8 @@
+# Arquivos compilados (objetos e executáveis)
+*.o
+*.exe
+processador
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
