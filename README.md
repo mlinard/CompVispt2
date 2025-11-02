@@ -34,7 +34,7 @@ Implementa um filtro de Média (Box Blur) 3x3. Ele suaviza a imagem, reduzindo d
 
 | Imagem Original (com textura) | Imagem Filtrada (Passa-Baixa) |
 | :---: | :---: |
-| ![Imagem original com textura de madeira](Exemplo//entrada-lowpass.bmp) | ![Imagem após filtro passa-baixa](Exemplo//saida_lowpass_final.bmp) |
+| ![Imagem original com textura de madeira](Exemplo//Entrada-lowpass.bmp) | ![Imagem após filtro passa-baixa](Exemplo//saida_lowpass_final.bmp) |
 
 ### 3. Filtro Passa-Alta (`highpass`)
 Utiliza um operador Laplaciano 3x3 para realçar bordas e detalhes. O resultado é uma imagem em tons de cinza que destaca as áreas de alta frequência (mudanças rápidas de cor).
