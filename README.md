@@ -53,7 +53,7 @@ make
 
 Isso criará o executável `processador`.
 
-### Compilação Manual
+###  Compilação Manual
 Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `src/`):
 ```bash
 gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall
