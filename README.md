@@ -1,6 +1,6 @@
 # Processador de Imagens BMP em C
 ### Projeto 2 - Computação Visual
-**Universidade Presbiteriana Mackenzie - Faculdade de Computação e Informática**
+**Universidade Presbiteriana Mackenzie**
 
 ---
 
