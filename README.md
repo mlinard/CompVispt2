@@ -50,12 +50,13 @@ O projeto foi testado em Windows com MinGW-w64 (GCC e Make).
 No terminal, na raiz do projeto, execute:
 ```bash
 make
+Isso criará o executável processador.
 
-Isso criará o executável `processador`.
+Compilação Manual
+Se preferir, use o gcc diretamente (assumindo que os fontes estão na pasta src/):
 
-###  Compilação Manual
-Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `src/`):
-```bash
+Bash
+
 gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall
 (Nota: Se seus arquivos .c estão na raiz, remova o src/ do comando)
 
