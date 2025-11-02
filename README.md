@@ -1,7 +1,21 @@
 # Processador de Imagens BMP em C
+### Projeto 2 - Computação Visual
+**Universidade Presbiteriana Mackenzie - Faculdade de Computação e Informática**
 
-Este é um projeto para a disciplina de Computação Visual, que implementa um processador de imagens em C (padrão C99). O programa é executado via linha de comando (CLI) e é capaz de aplicar diferentes filtros de processamento de imagem em arquivos BMP de 24 bits não comprimidos.
+---
 
+##  Integrantes do Grupo
+
+* **Marcello Linard Teixeira** - RA: 10419338
+* **Felipe José de Castro** - RA: 10356965
+* **Mauricio Gabriel Gutirrez Garcia** - RA: 10403130
+
+---
+
+##  Vídeo de Apresentação 
+
+ **[Assistir ao Pitch do Projeto no YouTube](https://youtu.be/COLOQUE_O_SEU_LINK_AQUI)**
+ 
 ---
 
 ## Demonstração dos Filtros
