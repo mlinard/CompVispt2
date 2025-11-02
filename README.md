@@ -48,21 +48,20 @@ O projeto foi testado em Windows com MinGW-w64 (GCC e Make).
 ### Compilação com `make` (Recomendado)
 No terminal, na raiz do projeto, execute:
 ```bash
-make
+make ```
 Isso criará o executável processador.
 
 ### Compilação Manual
 Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `src/`):
 ```bash
-gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall
-(Nota: Se seus arquivos .c estão na raiz, remova o src/ do comando)
+gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall ```
 
 Como Usar
 O programa é executado via linha de comando com três argumentos:
 
-Bash
+```bash
 
-processador <arquivo_entrada.bmp> <arquivo_saida.bmp> <filtro>
+processador <arquivo_entrada.bmp> <arquivo_saida.bmp> <filtro> ```
 Filtros Disponíveis:
 median
 
@@ -73,6 +72,6 @@ lowpass
 highpass
 
 Exemplo de Uso:
-Bash
+```bash
 
-processador exemplos/Entrada-mediana.bmp resultado.bmp median
+processador Exemplo/Entrada-mediana.bmp resultado.bmp median ```
