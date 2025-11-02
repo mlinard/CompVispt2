@@ -38,25 +38,9 @@ Substitui cada pixel pelo valor mais frequente (moda) em sua vizinhança 3x3. Is
 
 ---
 
-## Como Compilar
-
-O projeto foi testado em Windows com MinGW-w64 (GCC e Make).
-
-### Requisitos
-* `gcc` (GNU Compiler Collection)
-* `make` (GNU Make)
-
-### Compilação com `make` (Recomendado)
-No terminal, na raiz do projeto, execute:
+### Compilação Manual
+Se preferir, use o `gcc` diretamente (assumindo que os fontes estão na pasta `src/`):
 ```bash
-make
-Isso criará o executável processador.
-
-Compilação Manual
-Se preferir, use o gcc diretamente (assumindo que os fontes estão na pasta src/):
-
-Bash
-
 gcc src/main.c src/bmp_handler.c src/filters.c -o processador -lm -Wall
 (Nota: Se seus arquivos .c estão na raiz, remova o src/ do comando)
 
