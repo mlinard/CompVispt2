@@ -14,7 +14,7 @@
 
 ##  Vídeo de Apresentação 
 
- **[Assistir ao Pitch do Projeto no YouTube]([https://youtu.be/COLOQUE_O_SEU_LINK_AQUI](https://youtu.be/Wvs4coprm7I)**
+ **[Assistir ao Pitch do Projeto no YouTube](https://youtu.be/Wvs4coprm7I)**
  
 ---
 
